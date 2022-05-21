@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GarbageBox - PC store</title>
+    <link rel="stylesheet" href="shopstyle.css">
+    <link rel="shortcut icon" href="img/garbagebox.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="cart">
+        <div id="cart-window">
+            <div id="cart-header">
+                <img class="cart-button-close" src="img/crosspng2.png" width=30px >
+            </div>
+            <div id="cart-content">
+                <table id = "cart-table"></table>
+                <div id = "total-sum"></div>
+                <div>
+                    <form  name = "order" action = "https://shop4test.intermir.ru/sender.php" method = "post">
+                        <input class = "order" name = "name" type = "text" value = "First Name">
+                        <input class = "order" name = "email" type = "email" value = "example@gmail.com">
+                        <input class = "order" name = "card_number" type = "text" value = "Card number">
+                        <input class = "order" name = "cvc" type = "password" value = "CVV/CVC">
+                        <input class = "order" name = "cart" type = "hidden" value = "">
+                    </form>
+                </div>
+            </div>
+            <div id="cart-footer">
+                <button class="cart-button-1">Make an order!</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <p class="BasketNumber" id="BasketNumber">0</p>
+        <div id="circle"></div>
+        <img class="basket" src="img/basket.png" width=50px height=50>
+        <section class="Basket_Button_Section">
+            <button class="BasketButton" id="BusketButton"></button>
+        </section>
+    </header>
+<!--    <section class="DarkModeSwitch"> you can add this switch but i don't finished it :(-->
+<!--        <label class="switch" id="switch">-->
+<!--        <input type="checkbox" id="checkbox">-->
+<!--        <span class="slider round" id="slider_round"></span>-->
+<!--    </label>-->
+<!--    </section>-->
+    <h2 class="h2animated" id="h2animated">Catalog.all</h2>
+<!--    <p class="DarkMode">Dark Mode Switch:</p>-->
+
+    <section class="catalog">
+        <div class="object_card" id="card1" data-id = "1">
+            <h3>-PC Zver Edition-</h3>
+            <section class="PC_Zver_Edition">
+                <img class="Cardimg" src="img/computer_pc_PNG17490-removebg-preview.png" height="264px" width="340px">
+            </section>
+            <p class="specs" id="pgradient">Specifications:</p>
+            <section class="lis">
+                <ul id="uls">
+                    <li>Great Graphic Card - Garbage9D RTX 3050Ti</li>
+                    <li>Intel Xeon E5X</li>
+                    <li>Water Pump</li>
+                    <li>Free Delivery(Only in USA)</li>
+                    <li>Price - <span class="price">1200</span>$</li>
+                </ul>
+            </section>
+            <button data-name="PCzverED" data-price="1200" class="BuyButton" id="BuyButton">Buy It!</button>
+        </div>
+        <div class="object_card" id=card2  data-id = "2">
+            <h3>-PC Zver Edition X-</h3>
+            <section class="PC_Zver_Edition_X">
+                <img class="Cardimg" src="img/PCpng.png" height="264px" width="340px">
+            </section>
+            <p class="specs" id="pgradient">Specifications:</p>
+            <section class="lis">
+                <ul id="uls">
+                    <li>Beastful Graphic Card - Garbage9D RTX 3060Ti</li>
+                    <li>AMD Kukuryzen 7 3600X</li>
+                    <li>Water Pump RGB</li>
+                    <li>Shindows 11 on board</li>
+                    <li>Price - <span class="price">1700</span>$</li>
+                </ul>
+            </section>
+            <button data-name="PCzverEDX" data-price="1700" class="BuyButton" id="BuyButton">Buy It!</button>
+            <div class="object_card2" id=card3  data-id = "3">
+                <h3 class=KBSD>-Keyboard Single Draft-</h3>
+                <section class="Keyboard_Single_Draft">
+                    <img class="Cardimg" src="img/KBsingledraft.png" height="264px" width="340px">
+                </section>
+                <p class="specs" id="pgradient">Specifications:</p>
+                <section class="lis">
+                    <ul id="uls">
+                        <li>Tactical Akky Lavender Purple switches</li>
+                        <li>Krypoc 205g0 lube</li>
+                        <li>PBT keycaps</li>
+                        <li>RGB lights</li>
+                        <li>Price - <span class="price">50</span>$</li>
+                    </ul>
+                    </ul>
+                </section>
+                <button data-name="KBsingleDraft" data-price="50" class="BuyButton" id="BuyButton">Buy It!</button>
+            </div>
+            <div class="object_card3" id=card4  data-id = "4">
+                <h3 class=KBCP>-Keyboard Con Pick-</h3>
+                <section class="Keyboard_Con_Pick">
+                    <img class="Cardimg" src="img/KBconpick.png" height="264px" width="340px">
+                </section>
+                <p class="specs" id="pgradient">Specifications:</p>
+                <section class="lis">
+                    <ul id="uls">
+                        <li>Linear thocc Akky Silver CSS switches</li>
+                        <li>Krypoc 205g0 lube</li>
+                        <li>PBT keycaps</li>
+                        <li>Tape and Foam mod</li>
+                        <li>Price - <span class="price">70</span>$</li>
+                    </ul>
+                    </ul>
+                </section>
+                <button data-name="KBconPick" data-price="70" class="BuyButton" id="BuyButton">Buy It!</button>
+            </div>
+    </section>
+    <script type="text/javascript" src="jsshop.js">
+    </script>
+</body>
+
+</html>

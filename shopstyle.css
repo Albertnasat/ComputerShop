@@ -1,0 +1,359 @@
+html{
+    overflow-x: hidden;
+
+}
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+header{
+/*    margin-top: 20px;*/
+}
+.h2animated{
+	font-family: Verdana;
+	margin-left: 45%;
+    color: black;
+}
+h3{
+	font-family: Arial;
+	font-weight: 1000;
+	margin-left: 25%;
+    color: black;
+}
+.KBSD{
+    font-family: Arial;
+	font-weight: 1000;
+	margin-left: 17%;
+    color: black;
+}
+.KBCP{
+    font-family: Arial;
+	font-weight: 1000;
+	margin-left: 21%;
+    color: black;
+}
+.catalog{
+	display: flex;
+	justify-content: space-around;   
+}
+.object_card{
+	border: 3px solid black;
+    border-radius: 30px;
+    
+}
+.object_card2{
+	border: 3px solid black;
+    border-radius: 30px;
+    width: 360px;
+	height: 550px;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    margin-left: -186.5%;
+    
+}
+.object_card3{
+	border: 3px solid black;
+    border-radius: 30px;
+    width: 360px;
+	height: 550px;
+    flex-wrap: wrap;
+    margin-top: -154.5%;
+    margin-left: 0%;
+    
+}
+p{
+	font-family: Verdana;
+    color: black;
+}
+li{
+    font-weight: 1000;
+}
+ul{
+	font-family: Arial;
+	margin-right: 5%;
+	margin-top: -10%;
+}
+.object_card{
+	width: 360px;
+	height: 550px;
+    flex-wrap: wrap;
+}
+.specs{
+	font-size: 30px;
+	font-weight: 1000;
+    line-height: 50px;
+    font-family: Verdana;
+    position: relative;
+    background: white;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -1%;
+}
+.specs:before {
+    content: '';
+    position: absolute;
+    filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #00cd00 1em, #1d1c1d 50%), repeating-linear-gradient(45deg, #1d1c1d, #1d1c1d 1em, #FFF 1em, #00cd00 50%);
+    background-size: 3em 3em, 2em 2em;
+    animation-name: ani;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ani {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@media (max-width:690px) {    
+    .specs {font-size: 20px;}    
+}
+.Cardimg{
+    margin-top: -3%;
+} 
+.basket{
+    margin-bottom: -7%;
+    margin-left: 95%;
+}
+#circle {
+    width: 20px;
+    height: 20px;
+    background: #009135;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    margin-left: 97.5%;
+    margin-bottom: -6.5%;
+    z-index: 9;
+    position: relative;   
+}
+.BasketNumber{
+    position: absolute;
+    color: white;
+    font-family: Arial;
+    font-weight: 1000;
+    margin-top: -0.15%;
+    margin-left: 97.85%;
+    z-index: 9999;
+}
+.BuyButton{
+    cursor: pointer;
+    background-color: #009135;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: -3%;
+    margin-left: 35%;
+  
+    
+}
+.DarkModeSwitch{
+    position: absolute;
+    margin-top: 0.6%;
+    margin-left: 91%;
+}
+.DarkMode{
+    position: absolute;
+    font-family: Arial;
+    font-weight: 1000;
+    font-size: 13spx;
+    margin-top: -4.7%;
+    margin-left: 78.5%;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #009135;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #009135;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}   
+.PC_Zver_Edition{
+    margin-left: 4%;
+}
+.PC_Zver_Edition_X{
+    margin-left: 4%;
+}
+.BasketButton{
+    cursor: pointer;
+    background-color: white;
+    border: black 1px solid;
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+    opacity: 0%;
+}
+.Basket_Button_Section{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    margin-top: 2.5%;
+    margin-left: 93.7%;
+}
+.dark-mode {
+  background-color: #212224;
+  color: white;
+}
+#cart {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    position: fixed;
+    display: none;
+    z-index: 99999999;
+    overflow-y: hidden;
+    top: -20px;
+    bottom: 0px;
+    
+}
+#cart-window {
+    position: fixed;
+    left: 200px;
+    right: 200px;
+    top: 200px;
+    /*bottom: 200px;*/
+    min-height: 250px;
+    background-color: white;
+    border-radius: 10px;
+}
+.cart-button-1 {
+    cursor: pointer;
+    background-color: #009135;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: -3%;
+    margin-left: 35%;
+    width: 200px;
+}
+.cart-button-close{
+    margin-left: 95.5%;
+    margin-top: 1.2%;
+    cursor: pointer;
+    color: white;
+}
+#cart-table{
+    width: 100%;
+    font-family: Arial;
+    font-weight: 1000;
+    padding: 10px;
+    margin-top: 0.5%;
+    
+}
+#cart-footer{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1%;
+    padding-left: 30%;
+
+}
+#cart-table td:last-child{
+    width: 50px;
+}
+.smallCross{
+    cursor: pointer;
+}
+.smallPlus{
+    cursor: pointer;
+}
+#total-sum{
+    width: 100%;
+    font-family: Arial;
+    font-weight: 1000;
+    padding: 10px;
+    margin-top: 0.5%;
+}
+.makeorder{
+    width: 100%;
+    font-family: Arial;
+    font-weight: 1000;
+    padding: 10px;
+    margin-top: 0.5%;
+}
+.order{
+    border: 3px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-family: Arial;
+    font-weight: 1000;
+    margin-left: 0.8%;
+    margin-bottom: 7%;
+
+}
